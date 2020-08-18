@@ -1,12 +1,15 @@
-import React from 'react';
-import {BrowserRouter, Route, Switch} from 'react-router-dom';
+import React from "react";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 
-import Main from '../Main/Main.js'
-import UploadPage from '../UploadPage/UploadPage';
+import Main from "../Main/Main.js";
+import UploadPage from "../UploadPage/UploadPage";
 
-import './App.scss';
+import "./App.scss";
 
 class App extends React.Component {
+  componentDidMount() {
+    alert("Please wait a moment for heroku server to awaken");
+  }
   render() {
     return (
       <BrowserRouter>
@@ -19,6 +22,5 @@ class App extends React.Component {
     );
   }
 }
-  
 
 export default App;
